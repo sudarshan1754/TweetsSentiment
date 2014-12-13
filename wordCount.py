@@ -1,7 +1,19 @@
 import nltk
 from pylab import *
+from zipfs import *
 
 # ./data_1000/unhappy_tweets_100
+
+def splitdata():
+    filename = raw_input("Enter the file name: ")
+    filecontents = open(filename, "r")
+    newtrain = open("unhappy_train", "w")
+    newtest = open("unhappy_test", "w")
+    for lno, line in enumerate(filecontents.readlines()):
+        if lno < 800:
+            newtrain.write(str(line))
+        else:
+            newtest.write(str(line))
 
 def main():
     filename = raw_input("Enter the file name: ")
@@ -16,12 +28,14 @@ def main():
             else:
                 vocab[token.lower()] += 1
 
-    newfile = open("happy_file", "w")
-    count = 0
-    for key, value in vocab.iteritems():
-        count += value
-        newfile.write(str(key) + "\t" + str(value) + "\n")
+    # newfile = open("unhappy_file", "w")
+    # count = 0
+    # for key, value in vocab.iteritems():
+    #     count += value
+    #     newfile.write(str(key) + "\t" + str(value) + "\n")
+
 
 
 if __name__ == "__main__":
-    main()
+    splitdata()
+    # main()
