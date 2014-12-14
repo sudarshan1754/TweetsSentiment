@@ -1,0 +1,69 @@
+###********************************************************************************###
+  # __author__ = 'sid'                                                             #
+  # This program is written as part of the Natural Language Processing Project     #
+  # @copyright: Sudarshan Sudarshan (Sid)                                          #
+###********************************************************************************###
+
+###********************************************************************************###
+                        # About Dataset and Initial Setup #
+###********************************************************************************###
+
+The folder "datasets" includes two datasets namely; "ds1" and "ds2". ds1 maps to
+Dataset-1 and ds2 maps to Dataset-2 in the report.
+
+I have made use of Python 2.7.3 programming/scripting environment.
+Note: It is better to use an IDE such as Pycharm to run the program. You can download the
+      free(community edition) version of the IDE from this link:
+      http://www.jetbrains.com/pycharm/download/
+
+Before running the program, please install the Natural Language Toolkit from this link:
+http://www.nltk.org/install.html
+
+###********************************************************************************###
+                            # FOR SENTIMENT ANALYSIS #
+###********************************************************************************###
+
+"SentimentNaiveBayes.py" file is the executable file which contains the program for
+this assignment.
+
+Execution:
+    In the terminal type: python SentimentNaiveBayes.py
+
+    Once you run the program, it will ask you for the path/directory name of
+    positive files and then the negative files, as shown below:
+
+        Enter the positive train file path:<path_of_positive_train_file>
+        Enter the negative train file path:<path_of_negative_train_file>
+        Enter the positive test file path:<path_of_positive_test_file>
+        Enter the negative test file path:<path_of_positive_test_file>
+
+    Once these are provided, the program runs on the data and displays the results
+    in the terminal/IDE.
+
+###********************************************************************************###
+                            # FOR BASELINE ANALYSIS #
+###********************************************************************************###
+
+"baseline.py" file is the executable file which contains the program for baseline
+analysis.
+
+Execution:
+    In the terminal type: python baseline.py
+
+    Once you run the program, it will ask you for the path/directory name of
+    the positive keywords file, negative keywords file along with positive test file
+    and then the negative test file, as shown below:
+
+
+        Enter the positive keywords file path: <path_of_positive-words_file>
+        Enter the negative keywords file path: <path_of_negative-words_file>
+        Enter the positive test file path: <path_of_positive_test_file>
+        Enter the negative test file path: <path_of_negative_test_file>
+
+    Once these are provided, the program runs on the data and displays the results
+    in the terminal/IDE.
+
+    Note: positive keywords file, negative keywords file are included in the folder
+          "dictionary"
+
+###********************************************************************************###
